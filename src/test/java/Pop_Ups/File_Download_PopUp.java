@@ -1,0 +1,38 @@
+package Pop_Ups;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class File_Download_PopUp {
+
+	public static void main(String[] args) throws Throwable {
+		//take care of driver executable
+				WebDriverManager.chromedriver().setup();
+				
+				//open empty browser
+				WebDriver driver = new ChromeDriver();	
+				
+				//maximize the window
+				driver.manage().window().maximize();
+				
+				//implicitly wait
+				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				
+				//enter and open url
+				driver.get("http://the-internet.herokuapp.com/download");
+				
+				driver.findElement(By.xpath("//a[text()='sample.png']")).click();
+				
+				Thread.sleep(5000);
+				
+				driver.close();
+				
+				
+	}
+
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-31T08:21:06 IST" name="Suite" finished-at="2023-07-31T08:21:06 IST" duration-ms="170">
+    <groups>
+      <group name="smoke">
+        <method signature="Invocation.test2()[pri:0, instance:TestNg_Group.Invocation@2c767a52]" name="test2" class="TestNg_Group.Invocation"/>
+        <method signature="Invocation_1.test1()[pri:0, instance:TestNg_Group.Invocation_1@2f7298b]" name="test1" class="TestNg_Group.Invocation_1"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2023-07-31T08:21:06 IST" name="Test" finished-at="2023-07-31T08:21:06 IST" duration-ms="170">
+      <class name="TestNg_Group.Invocation_1">
+        <test-method signature="test1()[pri:0, instance:TestNg_Group.Invocation_1@2f7298b]" started-at="2023-07-31T08:21:06 IST" name="test1" finished-at="2023-07-31T08:21:06 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- TestNg_Group.Invocation_1 -->
+      <class name="TestNg_Group.Invocation">
+        <test-method signature="test2()[pri:0, instance:TestNg_Group.Invocation@2c767a52]" started-at="2023-07-31T08:21:06 IST" name="test2" finished-at="2023-07-31T08:21:06 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- TestNg_Group.Invocation -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
